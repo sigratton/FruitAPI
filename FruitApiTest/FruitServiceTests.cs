@@ -15,7 +15,7 @@ namespace FruitApiTest
         {
             var sut = new FruitService();
 
-            var result = await sut.GetFruitAsync("apple");
+            var result = await sut.GetFruitAsync(fruit);
 
             result.ShouldNotBeNull();
         }
